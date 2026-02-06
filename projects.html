@@ -64,8 +64,8 @@
         <!-- Profile Intro -->
         <section class="p-6 bg-white dark:bg-gray-900/50 border-b border-gray-100 dark:border-gray-800">
             <div class="max-w-4xl mx-auto">
-                <h2 class="text-2xl font-bold mb-1">Research & Projects</h2>
-                <p class="text-gray-500 dark:text-gray-400 text-sm mb-4">M.Sc. Artificial Intelligence • AI Engineer</p>
+                <h2 class="text-2xl font-bold mb-1">Research & Technical Projects</h2>
+                <p class="text-gray-500 dark:text-gray-400 text-sm mb-4">A curated selection of work in machine learning, natural language processing, and computer vision.</p>
                 <!-- Filter Chips -->
                 <div class="flex gap-2 overflow-x-auto pb-2 no-scrollbar">
                     <button onclick="filterProjects('all')" class="filter-btn flex h-9 shrink-0 items-center justify-center rounded-full bg-primary text-white px-5 text-sm font-medium transition-colors">
@@ -78,7 +78,7 @@
                         Computer Vision
                     </button>
                     <button onclick="filterProjects('ml')" class="filter-btn flex h-9 shrink-0 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-5 text-sm font-medium hover:bg-gray-200 transition-colors">
-                        ML
+                        ML & XAI
                     </button>
                 </div>
             </div>
@@ -90,22 +90,22 @@
             <div data-category="ml" class="project-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden flex flex-col">
                 <div class="p-5">
                     <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-lg font-bold leading-tight">Explainable AI Final Project</h3>
+                        <h3 class="text-lg font-bold leading-tight">Explainable AI Frameworks</h3>
                         <a class="text-primary" href="https://github.com/FlowerMr/FlowerMr-FlowerMr-ExplainableAi-Final-Project" target="_blank">
                             <span class="material-symbols-outlined" style="font-size: 20px;">open_in_new</span>
                         </a>
                     </div>
                     <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">
-                        Master's final project focused on making deep learning models more interpretable. Implementation of various XAI techniques to visualize and understand model decision-making.
+                        Implementation and comparative evaluation of post-hoc interpretability methods (SHAP, LIME) to analyze feature importance and model reliability in deep neural networks.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">Python</span>
-                        <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">XAI</span>
+                        <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">Interpretability</span>
                         <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">PyTorch</span>
                     </div>
                     <a href="https://github.com/FlowerMr/FlowerMr-FlowerMr-ExplainableAi-Final-Project" target="_blank" class="w-full py-2.5 bg-primary text-white rounded-lg text-sm font-bold flex items-center justify-center gap-2">
                         <span class="material-symbols-outlined" style="font-size: 18px;">code</span>
-                        View on GitHub
+                        View Repository
                     </a>
                 </div>
             </div>
@@ -114,13 +114,13 @@
             <div data-category="nlp" class="project-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden flex flex-col">
                 <div class="p-5">
                     <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-lg font-bold leading-tight">LLM Interview Summarization</h3>
+                        <h3 class="text-lg font-bold leading-tight">LLM Pipeline for Transcript Synthesis</h3>
                         <a class="text-primary" href="https://github.com/FlowerMr/llm-interview-summarization-analysis" target="_blank">
                             <span class="material-symbols-outlined" style="font-size: 20px;">open_in_new</span>
                         </a>
                     </div>
                     <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">
-                        Automated summarization and analysis of interview transcripts using Large Language Models. Focuses on extracting key insights and sentiment analysis.
+                        Automated summarization and semantic analysis of interview transcripts using Large Language Models, focusing on latent theme extraction and factual consistency.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">NLP</span>
@@ -129,7 +129,7 @@
                     </div>
                     <a href="https://github.com/FlowerMr/llm-interview-summarization-analysis" target="_blank" class="w-full py-2.5 border border-primary text-primary bg-transparent rounded-lg text-sm font-bold flex items-center justify-center gap-2">
                         <span class="material-symbols-outlined" style="font-size: 18px;">code</span>
-                        View on GitHub
+                        View Repository
                     </a>
                 </div>
             </div>
@@ -138,22 +138,22 @@
             <div data-category="nlp" class="project-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden flex flex-col">
                 <div class="p-5">
                     <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-lg font-bold leading-tight">Multilingual PDF Summarizer</h3>
+                        <h3 class="text-lg font-bold leading-tight">Multilingual Document Summarization</h3>
                         <a class="text-primary" href="https://github.com/FlowerMr/Multilingual-PDF-Summarizer-Local-LLM-" target="_blank">
                             <span class="material-symbols-outlined" style="font-size: 20px;">open_in_new</span>
                         </a>
                     </div>
                     <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">
-                        A tool for summarizing PDF documents in multiple languages using local LLM deployment to ensure data privacy and offline capability.
+                        A framework for cross-lingual document synthesis using localized LLM deployment to ensure data privacy and enable offline information retrieval.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">Local LLM</span>
-                        <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">PDF Processing</span>
+                        <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">Privacy-Preserving AI</span>
                         <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">NLP</span>
                     </div>
                     <a href="https://github.com/FlowerMr/Multilingual-PDF-Summarizer-Local-LLM-" target="_blank" class="w-full py-2.5 bg-primary text-white rounded-lg text-sm font-bold flex items-center justify-center gap-2">
                         <span class="material-symbols-outlined" style="font-size: 18px;">code</span>
-                        View on GitHub
+                        View Repository
                     </a>
                 </div>
             </div>
@@ -162,22 +162,22 @@
             <div data-category="nlp" class="project-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden flex flex-col">
                 <div class="p-5">
                     <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-lg font-bold leading-tight">RAG Enterprise Chatbot</h3>
+                        <h3 class="text-lg font-bold leading-tight">Retrieval-Augmented Generation (RAG) System</h3>
                         <a class="text-primary" href="https://github.com/FlowerMr/Rag-enterprise-chatbot" target="_blank">
                             <span class="material-symbols-outlined" style="font-size: 20px;">open_in_new</span>
                         </a>
                     </div>
                     <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">
-                        Enterprise-grade chatbot implementation using Retrieval-Augmented Generation (RAG) to provide context-aware responses based on internal documentation.
+                        Designing a retrieval-augmented generation framework to improve factual consistency and context-grounding in specialized knowledge bases using vector databases.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">Python</span>
                         <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">RAG</span>
-                        <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">LLM</span>
+                        <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">Vector DB</span>
                     </div>
                     <a href="https://github.com/FlowerMr/Rag-enterprise-chatbot" target="_blank" class="w-full py-2.5 border border-primary text-primary bg-transparent rounded-lg text-sm font-bold flex items-center justify-center gap-2">
                         <span class="material-symbols-outlined" style="font-size: 18px;">code</span>
-                        View on GitHub
+                        View Repository
                     </a>
                 </div>
             </div>
@@ -186,22 +186,22 @@
             <div data-category="cv" class="project-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden flex flex-col">
                 <div class="p-5">
                     <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-lg font-bold leading-tight">Skin Lesion Classification</h3>
+                        <h3 class="text-lg font-bold leading-tight">Classification of Medical Imagery</h3>
                         <a class="text-primary" href="https://github.com/FlowerMr/-Skin-Lesion-Classification-with-ResNet50-ViT" target="_blank">
                             <span class="material-symbols-outlined" style="font-size: 20px;">open_in_new</span>
                         </a>
                     </div>
                     <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">
-                        Classification of skin lesion images from the HAM10000 dataset using ResNet50 and Vision Transformer (ViT) models.
+                        Diagnostic classification of skin lesion images from the HAM10000 dataset, assessing the comparative performance of ResNet50 and Vision Transformer architectures.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">Computer Vision</span>
-                        <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">ResNet50</span>
+                        <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">ResNet</span>
                         <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">ViT</span>
                     </div>
                     <a href="https://github.com/FlowerMr/-Skin-Lesion-Classification-with-ResNet50-ViT" target="_blank" class="w-full py-2.5 bg-primary text-white rounded-lg text-sm font-bold flex items-center justify-center gap-2">
                         <span class="material-symbols-outlined" style="font-size: 18px;">code</span>
-                        View on GitHub
+                        View Repository
                     </a>
                 </div>
             </div>
@@ -210,22 +210,22 @@
             <div data-category="ml" class="project-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden flex flex-col">
                 <div class="p-5">
                     <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-lg font-bold leading-tight">Heart Attack Prediction</h3>
+                        <h3 class="text-lg font-bold leading-tight">Predictive Modeling for Cardiology</h3>
                         <a class="text-primary" href="https://github.com/FlowerMr/heart-attack-prediction-ml" target="_blank">
                             <span class="material-symbols-outlined" style="font-size: 20px;">open_in_new</span>
                         </a>
                     </div>
                     <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">
-                        Highly accurate heart attack prediction using machine learning, with model interpretability powered by SHAP.
+                        Predictive modeling for cardiovascular events using ensemble machine learning methods, integrated with XAI techniques for clinical feature importance analysis.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">Machine Learning</span>
-                        <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">SHAP</span>
+                        <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">Ensemble ML</span>
+                        <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">XAI</span>
                         <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">Healthcare</span>
                     </div>
                     <a href="https://github.com/FlowerMr/heart-attack-prediction-ml" target="_blank" class="w-full py-2.5 border border-primary text-primary bg-transparent rounded-lg text-sm font-bold flex items-center justify-center gap-2">
                         <span class="material-symbols-outlined" style="font-size: 18px;">code</span>
-                        View on GitHub
+                        View Repository
                     </a>
                 </div>
             </div>
@@ -234,22 +234,22 @@
             <div data-category="ml" class="project-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden flex flex-col">
                 <div class="p-5">
                     <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-lg font-bold leading-tight">Author Publications Finder</h3>
+                        <h3 class="text-lg font-bold leading-tight">Bibliographic Data Aggregator</h3>
                         <a class="text-primary" href="https://github.com/FlowerMr/Author-publications-finder" target="_blank">
                             <span class="material-symbols-outlined" style="font-size: 20px;">open_in_new</span>
                         </a>
                     </div>
                     <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">
-                        A Python tool to find and aggregate academic publications of an author from multiple sources like OpenAlex, CrossRef, and arXiv.
+                        A Python-based scholarly tool designed to aggregate and normalize publication data from heterogeneous academic repositories via API integration.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">Python</span>
-                        <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">Academic Tool</span>
+                        <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">Data Normalization</span>
                         <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">API Integration</span>
                     </div>
                     <a href="https://github.com/FlowerMr/Author-publications-finder" target="_blank" class="w-full py-2.5 bg-primary text-white rounded-lg text-sm font-bold flex items-center justify-center gap-2">
                         <span class="material-symbols-outlined" style="font-size: 18px;">code</span>
-                        View on GitHub
+                        View Repository
                     </a>
                 </div>
             </div>
@@ -269,7 +269,7 @@
                         </svg>
                     </a>
                 </div>
-                <p class="text-gray-400 text-xs tracking-widest uppercase">© 2024 Mohammadreza FlowerMr • AI Researcher Portfolio</p>
+                <p class="text-gray-400 text-xs tracking-widest uppercase">© 2024 Mohammadreza FlowerMr | AI Researcher Portfolio</p>
             </div>
         </footer>
     </div>
@@ -281,7 +281,7 @@
 
             buttons.forEach(btn => {
                 const btnText = btn.textContent.trim().toLowerCase();
-                if (btnText === category.toLowerCase() || (category === 'all' && btnText === 'all')) {
+                if (btnText === category.toLowerCase() || (category === 'all' && btnText === 'all') || (category === 'ml' && btnText.includes('ml'))) {
                     btn.classList.add('bg-primary', 'text-white');
                     btn.classList.remove('bg-gray-100', 'dark:bg-gray-800', 'text-gray-700', 'dark:text-gray-300');
                 } else {
