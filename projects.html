@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Research & Projects | Mohammadreza FlowerMr</title>
+    <title>Research & Projects | Mohammadreza Golkar</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -65,7 +65,7 @@
         <section class="p-6 bg-white dark:bg-gray-900/50 border-b border-gray-100 dark:border-gray-800">
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-2xl font-bold mb-1">Research & Technical Projects</h2>
-                <p class="text-gray-500 dark:text-gray-400 text-sm mb-4">A curated selection of work in machine learning, natural language processing, and computer vision.</p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm mb-4">A curated selection of work in machine learning, natural language processing, and large language models.</p>
                 <!-- Filter Chips -->
                 <div class="flex gap-2 overflow-x-auto pb-2 no-scrollbar">
                     <button onclick="filterProjects('all')" class="filter-btn flex h-9 shrink-0 items-center justify-center rounded-full bg-primary text-white px-5 text-sm font-medium transition-colors">
@@ -73,9 +73,6 @@
                     </button>
                     <button onclick="filterProjects('nlp')" class="filter-btn flex h-9 shrink-0 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-5 text-sm font-medium hover:bg-gray-200 transition-colors">
                         NLP
-                    </button>
-                    <button onclick="filterProjects('cv')" class="filter-btn flex h-9 shrink-0 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-5 text-sm font-medium hover:bg-gray-200 transition-colors">
-                        Computer Vision
                     </button>
                     <button onclick="filterProjects('ml')" class="filter-btn flex h-9 shrink-0 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-5 text-sm font-medium hover:bg-gray-200 transition-colors">
                         ML & XAI
@@ -86,6 +83,39 @@
 
         <!-- Project Grid -->
         <main class="p-4 space-y-4 max-w-4xl mx-auto w-full">
+            <!-- Project Card: Preprint -->
+            <div data-category="ml" class="project-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden flex flex-col">
+                <div class="p-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="flex gap-2">
+                            <span class="px-2 py-0.5 bg-primary text-white text-[10px] font-bold uppercase tracking-wider rounded">Preprint</span>
+                            <h3 class="text-lg font-bold leading-tight">Fair and Explainable Deep Learning for Skin Lesion Classification</h3>
+                        </div>
+                        <a class="text-primary" href="fair-explainable-skin-lesion.pdf" target="_blank">
+                            <span class="material-symbols-outlined" style="font-size: 20px;">description</span>
+                        </a>
+                    </div>
+                    <p class="text-gray-500 dark:text-gray-400 text-xs font-semibold mb-2">Mohammadreza Golkar • February 2026</p>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3">
+                        Deep learning models have achieved strong performance in automated skin lesion classification, yet concerns remain about their fairness and transparency across diverse skin tones. This study presents an EfficientNet-B0 based pipeline for multi-class skin lesion classification...
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">Ai</span>
+                        <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">Machine Learning</span>
+                    </div>
+                    <div class="flex gap-2">
+                        <a href="fair-explainable-skin-lesion.pdf" target="_blank" class="flex-1 py-2 bg-primary text-white rounded-lg text-sm font-bold flex items-center justify-center gap-2">
+                            <span class="material-symbols-outlined" style="font-size: 18px;">description</span>
+                            Read Paper
+                        </a>
+                        <a href="https://github.com/FlowerMr/my-thesis-paper" target="_blank" class="flex-1 py-2 border border-primary text-primary bg-transparent rounded-lg text-sm font-bold flex items-center justify-center gap-2">
+                            <span class="material-symbols-outlined" style="font-size: 18px;">code</span>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
             <!-- Project Card 1: XAI -->
             <div data-category="ml" class="project-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden flex flex-col">
                 <div class="p-5">
@@ -182,29 +212,6 @@
                 </div>
             </div>
 
-            <!-- Project Card 5: CV -->
-            <div data-category="cv" class="project-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden flex flex-col">
-                <div class="p-5">
-                    <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-lg font-bold leading-tight">Classification of Medical Imagery</h3>
-                        <a class="text-primary" href="https://github.com/FlowerMr/-Skin-Lesion-Classification-with-ResNet50-ViT" target="_blank">
-                            <span class="material-symbols-outlined" style="font-size: 20px;">open_in_new</span>
-                        </a>
-                    </div>
-                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">
-                        Diagnostic classification of skin lesion images from the HAM10000 dataset, assessing the comparative performance of ResNet50 and Vision Transformer architectures.
-                    </p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">Computer Vision</span>
-                        <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">ResNet</span>
-                        <span class="px-2.5 py-1 bg-primary/10 text-primary rounded text-xs font-semibold">ViT</span>
-                    </div>
-                    <a href="https://github.com/FlowerMr/-Skin-Lesion-Classification-with-ResNet50-ViT" target="_blank" class="w-full py-2.5 bg-primary text-white rounded-lg text-sm font-bold flex items-center justify-center gap-2">
-                        <span class="material-symbols-outlined" style="font-size: 18px;">code</span>
-                        View Repository
-                    </a>
-                </div>
-            </div>
 
             <!-- Project Card 6: ML -->
             <div data-category="ml" class="project-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden flex flex-col">
@@ -269,7 +276,7 @@
                         </svg>
                     </a>
                 </div>
-                <p class="text-gray-400 text-xs tracking-widest uppercase">© 2024 Mohammadreza FlowerMr | AI Researcher Portfolio</p>
+                <p class="text-gray-400 text-xs tracking-widest uppercase">© 2024 Mohammadreza Golkar | AI Researcher Portfolio</p>
             </div>
         </footer>
     </div>
